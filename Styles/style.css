@@ -393,7 +393,10 @@ nav {
   .card h3 {
     font-size: 1rem;
   }
-
+  .rating{
+    justify-content: center;
+    margin-bottom: 10px;
+  }
   .card p,
   .rating,
   .extra-info span {
