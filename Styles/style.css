@@ -151,8 +151,20 @@ nav {
   margin-bottom: 10px;
 }
 .rating {
-  color: #ffa500;
-  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 1rem;
+}
+.rating i {
+  color: #ffa500; /* Orange-yellow stars */
+}
+
+.rating-value {
+  margin-left: 0.5rem;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 /* Extra Info */
 .extra-info {
