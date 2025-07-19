@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #fff;
   color: #333;
   line-height: 1.5;
@@ -30,7 +30,7 @@ nav {
 }
 .logo {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 .nav-links {
   display: flex;
@@ -38,13 +38,14 @@ nav {
   align-items: center;
 }
 .nav-links a {
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 1rem;
   color: #333;
 }
 .icons {
   display: flex;
   gap: 15px;
-  font-size: 18px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -60,22 +61,28 @@ nav {
   max-width: 50%;
 }
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 3.25rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .hero-text p {
-  color: #666;
-  margin-bottom: 20px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .btn {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 10px 25px;
   background: #e91e63;
   color: #fff;
   border-radius: 30px;
   font-size: 14px;
   font-weight: bold;
+}
+.hero img {
+  width: 350px;
+  flex: 1;
 }
 .image-wrapper {
   width: 440px;
@@ -102,16 +109,17 @@ nav {
 .products h2 {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 1.75rem;
 }
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 .card {
   border: 1px solid #eee;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
   background: #fff;
   text-align: left;
@@ -149,107 +157,109 @@ nav {
 }
 .extra-info span {
   display: block;
-  color: #007bff;
+  color: #808080;
   font-size: 14px;
   font-weight: 500;
 }
 .see-more {
-    text-align: right;
-    margin-top: 20px;
+  text-align: right;
+  margin-top: 20px;
 }
 .see-more a {
-    color: #e91e63; /* Red color */
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #e91e63; /* Red color */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 .see-more a:hover {
-    color: #c2185b; /* Darker red on hover */
+  color: #c2185b; /* Darker red on hover */
 }
 
 .feature-products {
-    padding: 50px 8%;
-    background: #f9f9f9;
+  padding: 50px 8%;
+  background: #f9f9f9;
 }
-
+/* ===== Featured Products Section ===== */
 .feature-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    gap: 30px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 30px;
+  align-items: center;
 }
 
 .feature-image img {
-    width: 404px;
-    height: 270px;
-    border-radius: 8px;
+  width: 404px;
+  height: 270px;
+  border-radius: 8px;
 }
 
 .feature-content h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
 .feature-content p {
-    color: #555;
-    margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.6;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
 }
 
 .feature-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #e91e63;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: 0.3s;
+  display: inline-block;
+  padding: 12px 30px;
+  background: #e91e63;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .feature-btn:hover {
-    background: #c2185b;
+  background: #c2185b;
 }
-
+/* ===== footer Section ===== */
 .footer {
-    background: #111;
-    color: #fff;
-    text-align: center;
-    padding: 30px 20px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
 }
 
 .footer h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .footer p {
-    font-size: 14px;
-    margin-bottom: 15px;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .social-icons a {
-    background: #f0f0f0; /* Light gray background */
-    border-radius: 50%;  /* Round shape */
-    padding: 10px;       /* Space for gray fill */
-    display: inline-flex;
-    transition: 0.3s;
+  background: #808080; /* Light gray background */
+  border-radius: 50%; /* Round shape */
+  padding: 10px; /* Space for gray fill */
+  display: inline-flex;
+  transition: 0.3s;
 }
 
 .social-icons a:hover {
-    background: #e91e63; /* Pink hover background */
+  background: #e91e63; /* Pink hover background */
 }
 
 .social-icons img {
-    width: 22px;
-    height: 22px;
+  width: 22px;
+  height: 22px;
 }
+
